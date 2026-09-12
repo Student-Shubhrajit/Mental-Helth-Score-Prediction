@@ -1,7 +1,7 @@
 (() => {
   "use strict";
 
-  const API_BASE = "http://127.0.0.1:550";
+  const API_BASE = "http://127.0.0.1:2200";
 
   const form = document.getElementById("predict-form");
   const submitBtn = document.getElementById("submit-btn");
@@ -17,7 +17,6 @@
   const scoreBandEl = document.getElementById("score-band");
   const scoreContextEl = document.getElementById("score-context");
   const gaugeFill = document.getElementById("gauge-fill");
-  const errorLabelEl = document.getElementById("error-label");
   const errorCopyEl = document.getElementById("error-copy");
 
   const GAUGE_ARC_LENGTH = 314; // approx pi * r(100)
@@ -201,8 +200,9 @@
   }
 
   function renderError(label, copy) {
-    errorLabelEl.textContent = label;
-    errorCopyEl.textContent = copy;
+    // "label" is currently unused since there's no dedicated label element in the HTML;
+    // it's folded into the copy text so nothing is lost.
+    errorCopyEl.textContent = `${label}: ${copy}`;
     showState("error");
   }
 
