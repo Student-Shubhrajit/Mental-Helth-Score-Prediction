@@ -8,41 +8,22 @@ This project uses Machine Learning to predict a student's Mental Health Score ba
 The project performs:
 
 Duplicate checking and removal
+
 Missing-value checking
+
 Outlier analysis
+
 Data cleaning
+
 Handling unrealistic physical-activity values
+
 Skewness analysis
+
 Feature engineering
+
 Categorical encoding
+
 Feature scaling
 
-Project Workflow
-Dataset
-   ↓
-Data Cleaning
-   ↓
-EDA & Visualization
-   ↓
-Feature Engineering
-   ↓
-Encoding & Scaling
-   ↓
-Train-Test Split
-   ↓
-Linear Regression
-   ↓
-Random Forest
-   ↓
-Hyperparameter Tuning
-   ↓
-Model Evaluation
-   ↓
-Save ML Pipeline
-   ↓
-FastAPI Backend
-   ↓
-/predict API
-   ↓
-Predicted Mental Health Score
+
 
