@@ -7,25 +7,25 @@ This project uses Machine Learning to predict a student's Mental Health Score ba
 
 🔍 Data Processing
 
- The project performs:
+  The project performs:
 
-  Duplicate checking and removal
+   Duplicate checking and removal
 
-  Missing-value checking
+   Missing-value checking
 
-  Outlier analysis
+   Outlier analysis
 
-  Data cleaning
+   Data cleaning
 
-  Handling unrealistic physical-activity values
+   Handling unrealistic physical-activity values
 
-  Skewness analysis
+   Skewness analysis
 
-  Feature engineering
+   Feature engineering
 
-  Categorical encoding
+   Categorical encoding
 
-  Feature scaling
+   Feature scaling
 
 
 
