@@ -66,9 +66,9 @@ df['Physical_Activity_Hours'] = df['Physical_Activity_Hours'].clip(lower=0)
 
 num_cols = df.select_dtypes(include='number')
 num_cols.skew()
-# near to 0 -> Centralized (0.01, 0.002)
-# negative -> Left Skewed (-1.56)
-# poistive (greater than 0) -> Right Skewed (1.256)
+# near to 0 -> Centralized 
+# negative -> Left Skewed 
+# poistive (greater than 0) -> Right Skewed
 
 top_countries = df['Country'].value_counts().index[:10].tolist()
 
@@ -233,5 +233,3 @@ print(results)
 import joblib
 joblib.dump(rf_pipeline, 'Mental_Health_Model.pkl')
 
-# !pip install --upgrade scikit-learn==1.9.0
-# restart runtime, then reload with joblib.load if the pickle format allows it across the upgrade
